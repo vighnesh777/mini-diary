@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {BrowserRouter ,Route} from 'react-router-dom';
 import App from '../components/App/App';
@@ -16,4 +15,3 @@ const App1=()=>
             </BrowserRouter>
         )
 }
-export default App1;
