@@ -39,27 +39,27 @@ const Login = () => {
                     <form action="https://diaryservers.herokuapp.com/login" method="post">
                         <div className="signin-container">
                         
-                            <input type="text" name="name" placeholder=" " id="signinName" />
+                            <input type="text" name="name" placeholder=" " id="signinName" autoComplete="off" />
                             <label for="signinName">Email</label>
                             
-                            <input type="password" name="password" placeholder=" " id="signinPassword" />
+                            <input type="password" name="password" placeholder=" " id="signinPassword" autoComplete="off" />
                             <label for="signinPassword">Password</label>
                             <button className="login-button">Login</button>
                             <a href="google.com" style={{ color: "yellow", textDecoration: "none" ,fontWeight:"900"}}>Forgot your password?</a>
                         </div>
                     </form>
-                    <form action="http://localhost:3001/signin" method="post">
+                    <form action="http://localhost:3001/signin" method="post" >
                         <div className="signup-container  nodisplay">
                             
-                            <input type="email" name="Email" id="signupEmail"   placeholder=" "/>
+                            <input type="email" name="Email" id="signupEmail"   placeholder=" " autoComplete="off"/>
                             <label for="signupEmail">Email</label>
                             
-                            <input type="text" name="Username" id="signupUsername" placeholder=" " />
+                            <input type="text" name="Username" id="signupUsername" placeholder=" " autoComplete="off"/>
                             <label for="signupUsername">Username</label>
                             
-                            <input type="password" name="password1" id="signupPassword"  placeholder=" " />
+                            <input type="password" name="password1" id="signupPassword"  placeholder=" " autoComplete="off"/>
                             <label for="signupPassword">Password</label>
-                            <button className="signup-button" type="submit">Join</button>
+                            <button className="signup-button" type="submit" >Join</button>
                         </div>
                     </form>
                 </div>
