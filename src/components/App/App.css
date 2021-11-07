@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #0caf7c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url('./../../assets/sky.jpg'); 
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-size: 120vw auto;
+  z-index: -1;
+  animation: infinite linear 250s move;
+}
+
+@keyframes move {
+  from {background-position: 0 0;}
+  to {background-position: 120vw 0;}
+}
+    
+
+
+.app {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  padding-top: 15%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 150%;
+  color: whitesmoke;
+  height: 50%;
+  width: 100%;
+}
+
+
+.app-button > a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #0caf7c;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.app-button > a:hover {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #41bdee;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
